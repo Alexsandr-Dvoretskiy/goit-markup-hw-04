@@ -8,6 +8,10 @@
 /* вторичный цвет фона #F5F4FA */
 
 :root {
+	--card-set-gap: 30px;
+	--card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	--border-card: #ececec;
+
 	--primary-text-color: #757575;
 	--title-text-color: #212121;
 	--accent-text-color: #2196f3;
@@ -42,6 +46,8 @@ a {
 }
 img {
 	display: block;
+	height: 100%;
+	height: auto;
 }
 
 ul {
@@ -108,7 +114,7 @@ ul {
 	padding-top: 32px;
 	padding-bottom: 32px;
 
-	color: var(--primary-text-color);
+	color: var(--title-text-color);
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -160,10 +166,13 @@ ul {
 /* hero */
 
 .hero {
-	height: 600px;
 	text-align: center;
 }
 
+.hero.section {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
 .hero-title {
 	margin-top: 0;
 	margin-bottom: 30px;
@@ -212,9 +221,9 @@ ul {
 
 /* benefits */
 
-.benefits {
+/* .benefits {
 	background-color: var(--main-background-color);
-}
+} */
 /* features */
 
 .features {
@@ -251,6 +260,7 @@ ul {
 
 .feature-text {
 	margin-top: 0;
+	margin-bottom: 0;
 
 	font-size: 14px;
 	line-height: 1.7;
@@ -269,7 +279,7 @@ ul {
 }
 
 .work-img .item {
-	margin-right: 30px;
+	margin-right: var(--card-set-gap);
 }
 
 .work-img .item:nth-child(3n) {
@@ -283,12 +293,12 @@ ul {
 }
 .team p {
 	margin-top: 0;
-	margin-bottom: 30px;
+	margin-bottom: 0;
 }
 
 .team-list h3 {
-	margin-top: 30px;
 	margin-bottom: 10px;
+	margin-top: 0;
 
 	color: var(--title-text-color);
 	font-weight: 500;
@@ -304,7 +314,6 @@ ul {
 	justify-content: space-between;
 }
 .team-list .item {
-	border: 1px solid #ececec;
 	border-radius: 0px 0px 4px 4px;
 }
 
@@ -312,6 +321,13 @@ ul {
 	font-size: 16px;
 	line-height: 1.18;
 	letter-spacing: 0.03em;
+}
+.card-team {
+	border: 1px solid var(--border-card);
+	background-color: var(--primari-bg-color);
+	box-shadow: var(--card-shadow);
+
+	padding: var(--card-set-gap);
 }
 
 /* fotter */
@@ -364,13 +380,12 @@ ul {
 /* портфолио */
 
 .main-portfolio {
-	background-color: var(--main-background-color);
+	/* background-color: var(--main-background-color); */
 	text-decoration: none;
 }
 /* кнопки навигации */
 
 .button-nav {
-	margin-bottom: 50px;
 	border-radius: 4px;
 	padding: 6px 22px;
 	display: inline-block;
@@ -389,6 +404,7 @@ ul {
 .button-list {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 50px;
 }
 .button-list .item:not(:last-child) {
 	margin-right: 8px;
@@ -402,7 +418,8 @@ ul {
 /* ссылки */
 
 .portfolio-title {
-	margin: 20px 24px 4px;
+	margin: 0;
+	margin-bottom: 4px;
 
 	color: var(--title-text-color);
 	font-weight: 700;
@@ -412,7 +429,7 @@ ul {
 }
 
 .portfolio-text {
-	margin: 0px 24px 20px;
+	margin: 0;
 
 	font-size: 16px;
 	line-height: 1.88;
@@ -427,9 +444,8 @@ ul {
 .portfolio-link .item {
 	width: calc((100% - 60px) / 3);
 	display: flex;
-	margin-right: 30px;
-	margin-bottom: 30px;
-	border: 1px solid #eeeeee;
+	margin-right: var(--card-set-gap);
+	margin-bottom: var(--card-set-gap);
 }
 
 .portfolio-link .item:nth-last-child(-n + 3) {
@@ -438,4 +454,9 @@ ul {
 
 .portfolio-link .item:nth-child(3n) {
 	margin-right: 0;
+}
+.card-content {
+	border: 1px solid var(--border-card);
+	background-color: var(--primari-bg-color);
+	padding: 20px 24px;
 }
