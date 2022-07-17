@@ -138,8 +138,9 @@ ul {
 }
 
 .auth-nav {
-	display: flex;
+	display: inline-flex;
 	margin-left: auto;
+	align-items: center;
 }
 
 .auth-nav .item + .item {
@@ -147,7 +148,8 @@ ul {
 }
 
 .auth-nav a {
-	display: block;
+	display: inline-flex;
+	align-items: center;
 	padding-top: 32px;
 	padding-bottom: 32px;
 
@@ -156,6 +158,24 @@ ul {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
+}
+.tel-link::before {
+	content: "";
+	width: 10px;
+	height: 16px;
+	margin-right: 10px;
+
+	background-image: url(../images/Icon.svg/smartphone.svg);
+	background-size: contain;
+}
+.mail-link::before {
+	content: "";
+	width: 16px;
+	height: 12px;
+	margin-right: 10px;
+
+	background-image: url(../images/Icon.svg/envelope.svg);
+	background-size: contain;
 }
 
 .auth-nav a:hover,
@@ -172,7 +192,16 @@ ul {
 .hero.section {
 	padding-top: 200px;
 	padding-bottom: 200px;
-	background-image: url(../images/ImgFon.jpg);
+	max-width: 1600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #c4c4c4;
+	/* background-image: url(../images/ImgFon.jpg); */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/ImgFon.jpg);
 }
 .hero-title {
 	margin-top: 0;
@@ -209,6 +238,7 @@ ul {
 /* section */
 
 .section-title {
+	/* display: inline-flex; */
 	margin-top: 0;
 	margin-bottom: 50px;
 
@@ -238,6 +268,29 @@ ul {
 }
 .features .item:nth-child(4n) {
 	margin-right: 0;
+}
+.features .item::before {
+	display: block;
+	content: "";
+	height: 120px;
+	margin-bottom: 30px;
+	background-color: var(--secondary-background-color);
+	border-radius: 4px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.features .item:nth-child(1)::before {
+	background-image: url(../images/Icon.svg/antenna\ 1.svg);
+}
+.features .item:nth-child(2)::before {
+	background-image: url(../images/Icon.svg/clock\ 1.svg);
+}
+.features .item:nth-child(3)::before {
+	background-image: url(../images/Icon.svg/Vector.svg);
+}
+.features .item:nth-child(4)::before {
+	background-image: url(../images/Icon.svg/astronaut\ 1.svg);
 }
 
 .features .title {
@@ -294,7 +347,7 @@ ul {
 }
 .team p {
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 16px;
 }
 
 .team-list h3 {
@@ -329,6 +382,39 @@ ul {
 	box-shadow: var(--card-shadow);
 
 	padding: var(--card-set-gap);
+}
+.socials-list {
+	display: inline-flex;
+}
+.socials-list .socials-link {
+	margin-right: auto;
+	margin-left: auto;
+	display: inline-flex;
+	content: "";
+	width: 44px;
+	height: 44px;
+	margin-right: 10px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 20px;
+}
+.socials-link:hover {
+	background-color: #2196f3;
+	border-radius: 50%;
+	c
+}
+.socials-link.icon-inst {
+	background-image: url(../images/Icon.svg/instagram\ 2.svg);
+}
+.socials-link.icon-twit {
+	background-image: url(../images/Icon.svg/twitter\ 1.svg);
+}
+.socials-link.icon-fb {
+	background-image: url(../images/Icon.svg/facebook\ 1.svg);
+}
+.socials-link.icon-in {
+	margin-right: 0;
+	background-image: url(../images/Icon.svg/linkedin\ 1.svg);
 }
 
 /* fotter */
