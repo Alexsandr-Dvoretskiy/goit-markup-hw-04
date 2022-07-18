@@ -383,39 +383,43 @@ ul {
 
 	padding: var(--card-set-gap);
 }
+.socials-item {
+	width: 44px;
+	height: 44px;
+	margin-right: 10px;
+	outline: 1px solid red;
+}
+/* .socials-list .socials-item:last-child {
+	margin-right: 0;
+} */
+.icon-link {
+	width: 44px;
+	height: 44px;
+}
+
+.icon-svg {
+	width: 20px;
+	height: 20px;
+	fill: #afb1b8;
+}
+.icon-svg:hover {
+	fill: #2196f3;
+}
 .socials-list {
 	display: inline-flex;
 }
-.socials-list .socials-link {
+/* .socials-list .socials-link {
 	margin-right: auto;
 	margin-left: auto;
 	display: inline-flex;
 	content: "";
 	width: 44px;
-	height: 44px;
+	height: 44px; 
 	margin-right: 10px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 20px;
-}
-.socials-link:hover {
-	background-color: #2196f3;
-	border-radius: 50%;
-}
-
-.socials-link.icon-inst {
-	background-image: url(../images/Icon.svg/instagram\ 2.svg);
-}
-.socials-link.icon-twit {
-	background-image: url(../images/Icon.svg/twitter\ 1.svg);
-}
-.socials-link.icon-fb {
-	background-image: url(../images/Icon.svg/facebook\ 1.svg);
-}
-.socials-link.icon-in {
-	margin-right: 0;
-	background-image: url(../images/Icon.svg/linkedin\ 1.svg);
-}
+} */
 
 /* fotter */
 
@@ -424,7 +428,6 @@ ul {
 	padding-bottom: 60px;
 
 	background-color: #2f303a;
-	outline: 1px solid red;
 }
 
 .address-item {
