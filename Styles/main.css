@@ -448,23 +448,40 @@ ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-
-	/* align-items: center;
-	background-size: cover; */
 }
-/* .socials-list .socials-link {
-	margin-right: auto;
-	margin-left: auto;
-	display: inline-flex;
-	content: "";
-	width: 44px;
-	height: 44px; 
-	margin-right: 10px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 20px;
-} */
 
+/* наши клиенты */
+.client {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.icon-client {
+	padding: 22px 62px;
+}
+.client-item {
+	height: 100%;
+	width: 100%;
+	margin-right: 30px;
+}
+.client-container {
+	display: flex;
+	width: 170px;
+	height: 92px;
+
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+}
+.client .client-item:last-child {
+	margin-right: 0;
+}
+/* .icon-foto {
+	height: 100%;
+	width: 100%;
+	display: flex;
+} */
 /* fotter */
 
 .fotter {
