@@ -415,30 +415,42 @@ ul {
 	width: 20px;
 	height: 20px;
 	fill: #afb1b8;
-	margin: 12px 12px;
 }
+
 .socials-item {
+	height: 100%;
+	width: 100%;
 	margin-right: 10px;
 }
 .socials-list .socials-item:last-child {
 	margin-right: 0;
 }
 .icon-link {
-	display: block;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 44px;
 	height: 44px;
-	outline: 1px solid rebeccapurple;
+
 	border-radius: 50%;
+}
+.icon-link:hover {
 	background-color: #2196f3;
 }
+.icon-svg:hover {
+	fill: #ffffff;
+}
+
 .socials-list {
 	display: flex;
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	outline: 1px solid rebeccapurple;
-	align-items: center;
-	background-size: cover;
+
+	/* align-items: center;
+	background-size: cover; */
 }
 /* .socials-list .socials-link {
 	margin-right: auto;
