@@ -427,15 +427,23 @@ ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	justify-content: space-between;
 }
 .icon-foto {
 	fill: #757575;
 	width: 170px;
 	height: 92px;
 	border: 1px solid #afb1b8;
-	margin-right: 30px;
+	/* margin-right: 30px; */
 	border-radius: 4px;
 }
+.icon-client {
+	/* display: block; */
+	width: 170px;
+	height: 92px;
+	/* margin-right: 30px; */
+}
+
 /* .client-container {
 	display: flex;
 	width: 170px;
@@ -448,12 +456,11 @@ ul {
 	border-radius: 4px;
 	margin-right: 30px;
 } */
-.icon-foto:hover {
+.icon-foto:hover,
+.icon-foto:focus {
 	fill: #2196f3;
 }
-.client-link {
-	margin-right: 0;
-}
+
 /* .client {
 	display: flex;
 	list-style: none;
@@ -510,7 +517,9 @@ ul {
 	line-height: 1.7;
 	text-decoration: none;
 }
-
+.address-link {
+	display: flex;
+}
 .address-contacts {
 	display: inline-block;
 	margin-bottom: 9px;
@@ -521,15 +530,59 @@ ul {
 	line-height: 1.7;
 	text-decoration: none;
 }
+.fotter-link {
+	/* background-color: #2196f3; */
+	width: 206px;
+	margin-left: 70px;
+}
+.fotter-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
 
 .portfolio-link {
-	display: inline-block;
+	display: flex;
+}
+.icon-fotter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	margin-right: 10px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.fotter-svg {
+	padding: 0;
+	border: 0;
+
+	fill: #ffffff;
+}
+.icon-fotter:hover,
+.icon-fotter:focus {
+	background-color: #2196f3;
 }
 
 .address-contacts.tel {
 	display: inline-block;
 	margin-bottom: 0;
 	padding-bottom: 0;
+}
+.fotter-link h2 {
+	border-bottom: 20px;
+	margin-top: 0;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: #ffffff;
 }
 
 /* портфолио */
@@ -567,8 +620,9 @@ ul {
 
 .button-nav:hover,
 .button-nav:focus {
-	color: var(--title-text-color);
+	color: var(--primari-bg-color);
 	background-color: var(--accent-text-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* ссылки */
 
@@ -595,6 +649,10 @@ ul {
 .portfolio-link {
 	display: flex;
 	flex-wrap: wrap;
+}
+.portfolio-link .item:hover,
+.portfolio-link .item:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-link .item {
 	width: calc((100% - 60px) / 3);
