@@ -384,30 +384,21 @@ ul {
 	padding: var(--card-set-gap);
 }
 
-/* .socials-list .socials-item:last-child {
-	margin-right: 0;
-} */
-/* .icon-link {
+.socials-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.icon-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 44px;
 	height: 44px;
-	margin-right: 10px;
-}
-
-.sociale-item {
-	width: 44px;
-	height: 44px;
-	margin-right: 10px;
-}
-.icon-svg {
-	width: 20px;
-	height: 20px;
-	fill: #afb1b8;
-	background-color: #2196f3;
 	border-radius: 50%;
+	margin-right: 10px;
 }
-.icon-svg:hover {
-	fill: #2196f3;
-} */
 
 .icon-svg {
 	padding: 0;
@@ -417,37 +408,16 @@ ul {
 	fill: #afb1b8;
 }
 
-.socials-item {
-	height: 100%;
-	width: 100%;
-	margin-right: 10px;
-}
 .socials-list .socials-item:last-child {
 	margin-right: 0;
 }
-.icon-link {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 44px;
-	height: 44px;
 
-	border-radius: 50%;
-}
 .icon-link:hover {
 	background-color: #2196f3;
 }
+
 .icon-svg:hover {
 	fill: #ffffff;
-}
-
-.socials-list {
-	display: flex;
-	margin: 0;
-	padding: 0;
-	list-style: none;
 }
 
 /* наши клиенты */
