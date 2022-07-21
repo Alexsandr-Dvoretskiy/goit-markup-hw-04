@@ -121,9 +121,6 @@ ul {
 	text-decoration: none;
 }
 
-/* .site-nav a {
-} */
-
 .site-nav a:hover,
 .site-nav a:focus {
 	color: var(--accent-text-color);
@@ -159,7 +156,16 @@ ul {
 	font-size: 14px;
 	line-height: 1.14;
 }
-.tel-link::before {
+.aut-mail {
+	display: block;
+}
+.aut-svg::before {
+	content: "";
+	width: 10px;
+	height: 16px;
+	margin-right: 10px;
+}
+/* .tel-link::before {
 	content: "";
 	width: 10px;
 	height: 16px;
@@ -176,7 +182,7 @@ ul {
 
 	background-image: url(../images/Icon.svg/envelope.svg);
 	background-size: contain;
-}
+} */
 
 .auth-nav a:hover,
 .auth-nav a:focus {
@@ -197,7 +203,7 @@ ul {
 	margin-left: auto;
 	margin-right: auto;
 	background: #c4c4c4;
-	/* background-image: url(../images/ImgFon.jpg); */
+
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -238,7 +244,6 @@ ul {
 /* section */
 
 .section-title {
-	/* display: inline-flex; */
 	margin-top: 0;
 	margin-bottom: 50px;
 
@@ -252,9 +257,6 @@ ul {
 
 /* benefits */
 
-/* .benefits {
-	background-color: var(--main-background-color);
-} */
 /* features */
 
 .features {
@@ -389,7 +391,9 @@ ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	justify-content: space-between;
 }
+
 .icon-link {
 	display: flex;
 	justify-content: center;
@@ -397,7 +401,7 @@ ul {
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
-	margin-right: 10px;
+	/* margin-right: 10px; */
 }
 
 .icon-svg {
@@ -406,10 +410,6 @@ ul {
 	width: 20px;
 	height: 20px;
 	fill: #afb1b8;
-}
-
-.socials-list .socials-item:last-child {
-	margin-right: 0;
 }
 
 .icon-link:hover,
@@ -429,70 +429,26 @@ ul {
 	list-style: none;
 	justify-content: space-between;
 }
+
 .icon-foto {
 	fill: #757575;
 	width: 170px;
 	height: 92px;
 	border: 1px solid #afb1b8;
-	/* margin-right: 30px; */
+
 	border-radius: 4px;
 }
 .icon-client {
-	/* display: block; */
+	display: block;
 	width: 170px;
 	height: 92px;
-	/* margin-right: 30px; */
 }
 
-/* .client-container {
-	display: flex;
-	width: 170px;
-	height: 92px;
-	padding: 16px 32px;
-
-	justify-content: center;
-	align-items: center;
-	border: 1px solid #afb1b8;
-	border-radius: 4px;
-	margin-right: 30px;
-} */
 .icon-foto:hover,
 .icon-foto:focus {
 	fill: #2196f3;
 }
 
-/* .client {
-	display: flex;
-	list-style: none;
-}
-.icon-client:hover {
-	fill: #2196f3;
-}
-.icon-client {
-	fill: #afb1b8;
-}
-
-/.client-item {
-}
-.client-container {
-	display: flex;
-	width: 170px;
-	height: 92px;
-
-	justify-content: center;
-	align-items: center;
-	border: 1px solid #afb1b8;
-	border-radius: 4px;
-	margin-right: 30px;
-}
-.client-container.client-item {
-	margin-right: 0;
-} */
-/* .icon-foto {
-	height: 100%;
-	width: 100%;
-	display: flex;
-} */
 /* fotter */
 
 .fotter {
@@ -510,6 +466,7 @@ ul {
 .address-list {
 	display: inline-block;
 	margin-bottom: 9px;
+	margin-top: 20px;
 
 	color: var(--primari-bg-color);
 	font-style: normal;
@@ -517,9 +474,7 @@ ul {
 	line-height: 1.7;
 	text-decoration: none;
 }
-.address-link {
-	display: flex;
-}
+
 .address-contacts {
 	display: inline-block;
 	margin-bottom: 9px;
@@ -531,7 +486,8 @@ ul {
 	text-decoration: none;
 }
 .fotter-link {
-	/* background-color: #2196f3; */
+	display: block;
+
 	width: 206px;
 	margin-left: 70px;
 }
@@ -540,11 +496,10 @@ ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	margin-top: 20px;
+	justify-content: space-between;
 }
 
-.portfolio-link {
-	display: flex;
-}
 .icon-fotter {
 	display: flex;
 	justify-content: center;
@@ -552,7 +507,7 @@ ul {
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
-	margin-right: 10px;
+	/* margin-right: 10px; */
 	background-color: rgba(255, 255, 255, 0.1);
 }
 .fotter-svg {
@@ -571,7 +526,7 @@ ul {
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
-.fotter-link h2 {
+.fotter-link strong {
 	border-bottom: 20px;
 	margin-top: 0;
 	font-family: "Roboto";
@@ -584,11 +539,17 @@ ul {
 
 	color: #ffffff;
 }
+/* .address .item {
+	display: block;
+} */
+.container.fotter-item {
+	display: flex;
+	align-items: baseline;
+}
 
 /* портфолио */
 
 .main-portfolio {
-	/* background-color: var(--main-background-color); */
 	text-decoration: none;
 }
 /* кнопки навигации */
