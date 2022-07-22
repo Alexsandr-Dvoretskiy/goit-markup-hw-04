@@ -160,7 +160,6 @@ ul {
 	height: 12px;
 	fill: #afb1b8;
 	margin-right: 10px;
-	
 }
 .aut-svg.tel {
 	padding: 0;
@@ -168,7 +167,6 @@ ul {
 	width: 10px;
 	height: 16px;
 	fill: #afb1b8;
-	bs
 }
 .aut-list:hover {
 	color: #2196f3;
@@ -177,39 +175,6 @@ ul {
 .aut-list:focus .aut-svg {
 	fill: #2196f3;
 }
-/* .aut-svg::before {
-	content: "";
-} */
-/* .address-list .aut-svg:hover {
-	fill: #2196f3;
-} */
-
-/* .aut-svg::before {
-	width: 10px;
-	height: 16px;
-	margin-right: 10px;
-} */
-/* .tel-link::before {
-	content: "";
-	width: 10px;
-	height: 16px;
-	margin-right: 10px;
-	background-image: url(../images/Icon.svg/smartphone.svg);
-	background-size: contain;
-}
-.mail-link::before {
-	content: "";
-	width: 16px;
-	height: 12px;
-	margin-right: 10px;
-	background-image: url(../images/Icon.svg/envelope.svg);
-	background-size: contain;
-} */
-
-/* .auth-nav a:hover,
-.auth-nav a:focus {
-	color: var(--accent-text-color);
-} */
 
 /* hero */
 
