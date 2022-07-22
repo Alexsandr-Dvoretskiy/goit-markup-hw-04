@@ -129,6 +129,8 @@ ul {
 	display: inline-flex;
 	margin-left: auto;
 	align-items: center;
+
+	height: 44px;
 }
 
 .auth-nav .item + .item {
@@ -158,6 +160,7 @@ ul {
 	height: 12px;
 	fill: #afb1b8;
 	margin-right: 10px;
+	
 }
 .aut-svg.tel {
 	padding: 0;
@@ -165,6 +168,7 @@ ul {
 	width: 10px;
 	height: 16px;
 	fill: #afb1b8;
+	bs
 }
 .aut-list:hover {
 	color: #2196f3;
