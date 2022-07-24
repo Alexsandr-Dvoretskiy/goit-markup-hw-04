@@ -421,34 +421,33 @@ ul {
 	display: flex;
 	margin: 0;
 	padding: 0;
-	/* list-style: none; */
 	justify-content: space-between;
 }
-
-.icon-foto {
-	fill: #757575;
+.client .item {
 	width: 170px;
 	height: 92px;
+}
+.icon-client {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	fill: #757575;
+	border-color: #757575;
 	border: 1px solid #afb1b8;
 
 	border-radius: 4px;
 }
-.icon-client {
-	display: block;
-	width: 170px;
-	height: 92px;
+.icon-foto {
+	width: 106px;
+	height: 90px;
 }
-
-.icon-foto:hover,
-.icon-foto:focus {
+.icon-client:hover,
+.icon-client:focus {
 	fill: #2196f3;
 	border-color: #2196f3;
 }
-
-/* .client .item:hover,
-.client .item:focus {
-	color: #2196f3;
-} */
 
 /* fotter */
 
